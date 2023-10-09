@@ -1,0 +1,444 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family:"DM Sans";
+    overflow: hidden;
+}
+body{
+    position:relative;
+    height:100vh;
+}
+section{
+    display: flex;
+    align-items: center;
+    width:100%;
+    height:100%;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width:21%;
+    height: 100%;
+    padding-bottom:80px;
+    background-color: rgb(0, 0, 0);
+   overflow-y: scroll;
+}
+header::-webkit-scrollbar{
+    display: none;
+}
+header >img{
+    width:145px;
+    height:45px;
+    margin-left: 25px;
+    margin-top: 18.33px;
+}
+.home-buttons, .playlist-buttons,  .install-button{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    gap:5px;
+    width:100%;
+}
+.favoriate-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 25px;
+    
+}
+#h-buttons{
+    font-family: DM Sans;
+    width:99%;
+    border-radius: 5px;
+    margin: 2px 5px 2px 5px;
+font-size: 15px;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: -0.02em;
+text-align: left;
+color:white;
+
+}
+#h-image1, #h-image2, #h-image3{
+    width:20px;
+    height:20px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.favoriate-buttons>p{
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: -0.06em;
+    text-align: left;
+    color:white;
+   
+}
+#h-buttons:hover{
+    background-color: #282828;
+    cursor: pointer;
+}
+.favoriate-buttons>p:hover{
+    cursor: pointer;
+    font-size: 19px;
+    
+}
+main{
+    display: inline-block;
+    width:79%;
+    height:100%;
+    background-color:#121212;
+    padding:7px 30px 0 9px;
+    overflow-y: scroll;
+}
+.browse-section{
+    position: sticky;
+    top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+h4{
+    color:white;
+    font-family: DM Sans;
+    font-size: 28px;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: -0.001em;
+text-align: left;
+margin-left: 25px;
+margin-top:20px;
+
+}
+.feature-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:20px;
+    padding: 0px 25px 0px 25px;
+    
+    
+}
+main::-webkit-scrollbar{
+    display: none;
+}
+.feature-grid{
+    display: flex;
+    align-items: center;
+    gap:7px 15px;
+    background-color: #303030;
+    color: white;
+    width:290px;
+    height:65px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.feature-grid>p{
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.001em;
+    text-align: left;
+    color: white;
+    
+}
+.might-like{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    padding: 12px 25px;
+}
+h5{
+    font-size: 1.25rem;
+    font-family: DM Sans;
+
+font-weight: 700;
+line-height: 38px;
+letter-spacing: -0.02em;
+text-align: left;
+
+}
+.might-like>p{
+    font-family: DM Sans;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+.might-like>p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.playlistgrid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:15px 25px;
+    height:250px;
+    padding:0 25px 25px 25px;
+    overflow-y: scroll;
+}
+.playlistgrid::-webkit-scrollbar{
+    display: none;
+}
+.playlist-card{
+    
+
+    width: 197px;
+    
+    height: 230px;
+    border-radius: 2px;
+    background-color: rgba(24, 24, 24, 1);
+}
+.playlist-card img{
+    margin: 15px 15px 0px 19px;
+    height: 160px;
+    width: 160px;
+
+}
+.info2 {
+    
+    color: white;
+    
+    margin: 10px 0px 0px 21px;
+    font-family: DM Sans;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+    .artist {
+       
+        color: #B3B3B3;
+        
+        margin: 0px 0px 0px 21px;
+        font-family: DM Sans;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+a{
+    text-decoration: none;;
+}
+footer{
+    position:fixed;
+    bottom:0;
+    width:99%;
+    height:80px;
+    background-color: rgba(40, 40, 40, 1);
+}
+.music-player{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width:100%;
+    height:82%;
+    padding:5px;
+}
+.music-logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    width:180px;
+    height: 100%;
+    
+    padding:3px;
+
+}
+.music-logo>img{
+    width:100%;
+    height:100%;
+}
+.music-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width:420px;
+    height:100%;
+}
+#ms1{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+#shuffle{
+    width:25px;
+    height:18px;
+}
+#prev{
+    width:25px;
+    height:18px;
+}
+#forw{
+    width:25px;
+    height:18px;
+}
+#mix{
+    width:25px;
+    height:18px;
+}
+#playbut{
+    width:30px;
+    height:30px;
+}
+#ms2{
+    display: flex;
+    align-items: center;
+    gap:3px;
+    width:100%;
+color:white;
+}
+.times{
+    font-family: DM Sans;
+font-size: 10px;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 0.04em;
+text-align: left;
+
+}
+.trackbar{
+    width:90%;
+    height:4px;
+    display: flex;
+    align-items: center;
+    
+}
+.trackbar div{
+    border-radius: 5px;
+}
+.volume-bar{
+    
+    
+    display: flex;
+    align-items: center;
+    width:200px;
+    gap:7px;
+    height:100%;
+    
+    
+}
+
+.listen{
+    position: relative;
+    width:100%;
+    height:18%;
+    background-color: rgba(30, 215, 96, 1);
+}
+.listen>div{
+    position: absolute;
+    right:6%;
+    
+    color:black;
+    text-align: center;
+    font-family: DM Sans;
+font-size: 14px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    #h-buttons,.favoriate-buttons p{
+        font-size: 12px;
+    
+       }
+       .spotify-logo{
+        width:100px;
+        height:30px;
+        
+    }
+    .favoriate-buttons>p{
+        
+       
+        line-height: 10px;
+        letter-spacing: -0.06em;
+        text-align: left;
+        color:white;
+    }
+    .favoriate-buttons>p:hover{
+        cursor: pointer;
+        font-size: 14px;
+        
+    }
+
+
+}
+@media (min-width: 1200px) {
+   #h-buttons,.favoriate-buttons p{
+    font-size: 15px;
+
+   }
+   
+}
+@media (max-width: 767px) {
+    #h-buttons,.favoriate-buttons p{
+     font-size: 10px;
+     
+
+ 
+    }
+    #h-image1, #h-image2, #h-image3{
+        width:10px;
+        height:10px;
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+   
+    .favoriate-buttons>p{
+        
+       
+        line-height: 10px;
+        letter-spacing: -0.06em;
+        text-align: left;
+        color:white;
+    }
+    .home-buttons, .playlist-buttons, .favoriate-buttons, .install-button{
+        
+        padding-left: 8px;
+    }
+    .spotify-logo{
+        width:70px;
+        height:20px;
+        margin-left: 5px;
+    }
+    .favoriate-buttons>p:hover{
+        cursor: pointer;
+        font-size: 12px;
+        
+    }
+    
+ }
+ .playlistgrid .playlist-card:hover{
+    background-color: #383838;
+    cursor: pointer;
+}
+.feature-section .feature-grid:hover{
+    background-color: #404040;
+    cursor: pointer;
+}
+.dropdownMenu {
+    position: absolute;
+    background-color: #282828;
+    /* Other styling as needed */
+    display: none; /* Hide by default */
+}
+
+.playlist-card:hover .dropdownMenu {
+    display: block; /* Show when parent is hovered */
+}
